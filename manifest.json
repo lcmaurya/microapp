@@ -1,0 +1,13 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "MicroApp",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Micro",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "description": "A simple micro-learning PWA demo",
+  "id": "com.lcmaurya.microapp"
+}
