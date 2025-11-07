@@ -1,0 +1,7 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MicroApp</title><link rel="manifest" href="/manifest.json"></head>
+<body><h3>MicroApp</h3><input id="txt" placeholder="Type"><button onclick="save()">Save</button><ul id="list"></ul>
+<script>
+function save(){const v=document.getElementById('txt').value; if(!v) return; const l=document.getElementById('list'); const li=document.createElement('li'); li.textContent=v; l.appendChild(li); localStorage.setItem('demo', l.innerHTML);}
+window.onload=()=>{document.getElementById('list').innerHTML=localStorage.getItem('demo')||'';}
+</script></body></html>
